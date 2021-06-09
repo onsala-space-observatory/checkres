@@ -19,7 +19,7 @@ buildmytasks
 execfile('$HOME/.casa/NordicTools/checkres/mytasks.py')
 ```
 
-That's it! You should be able to run the new task in CASA! Just doing:
+That's it! You should now be able to run the new task in CASA! Just doing:
 
 ``` shell
 tget checkres

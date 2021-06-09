@@ -1,0 +1,6 @@
+*.pyc
+mytasks.py
+checkres.py
+checkres_cli.py
+*~
+.vscode/

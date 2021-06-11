@@ -48,7 +48,7 @@ def checkresAux(vis='', residual=''):
 
     Const = {'rad': 180./np.pi*3600., 'deg': 3600.}
 
-    print VIS
+    print(VIS)
 
     ms.open(VIS)
     ms.selectinit(datadescid=0)

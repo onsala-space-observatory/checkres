@@ -1,24 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl"?>
+<casaxml xsi:schemaLocation="http://casa.nrao.edu/schema/casa.xsd file:///opt/casa/code/xmlcasa/xml/casa.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://casa.nrao.edu/schema/psetTypes.html">
 
-<casaxml xmlns="http://casa.nrao.edu/schema/psetTypes.html" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://casa.nrao.edu/schema/casa.xsd
-file:///opt/casa/code/xmlcasa/xml/casa.xsd">
-
-  <task type="function" name="checkres" category="analysis">
+  <task category="analysis" name="checkres" type="function">
     <shortdescription>Task for a quick check of image residuals in Fourier space.</shortdescription>
     <description>Task for a quick check of image residuals in Fourier space.</description>
     <input>
-      <param type="string" name="vis" mustexist="true">
+      <param mustexist="true" name="vis" type="path">
         <description>Measurement set used in the imaging (or one of them, if several were used).</description>
-        <value></value>
+        <value/>
       </param>
 
-      <param type="string" name="residual" mustexist="true">
+      <param mustexist="true" name="residual" type="path">
         <description>Image (cube) of the residuals. It can also be the PSF, if you want to see the actual pixel weights used in the imaging.</description>
-        <value></value>
+        <value/>
       </param>
     </input>
-    <returns type="bool" />
+    <returns type="bool"/>
     <example>
 
 This task performs the FFT on an image (cube) and overplots the baseline UV tracks. This can be useful to locate baselines responsible of dynamic range limitations. It is interactive: the user can click on any baseline and/or antenna in the plot, and the track of that baseline will be highlighted over the FFT of the image residuals.

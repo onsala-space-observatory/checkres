@@ -20,18 +20,12 @@ file:///opt/casa/code/xmlcasa/xml/casa.xsd">
     </description>
     <input>
       <param type="string" name="vis" mustexist="true">
-        <description>
-	  Measurement set used in the imaging (or one of them, if several were used).
-	</description>
+        <description>Measurement set used in the imaging (or one of them, if several were used).</description>
         <value></value>
       </param>
 
       <param type="string" name="residual" mustexist="true">
-        <description>
-	  Image (cube) of the residuals. It can also be the PSF, if
-	  you want to see the actual pixel weights used in the
-	  imaging.
-	</description>
+        <description>Image (cube) of the residuals. It can also be the PSF, if you want to see the actual pixel weights used in the imaging.</description>
         <value></value>
       </param>
     </input>

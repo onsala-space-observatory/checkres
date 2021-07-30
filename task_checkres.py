@@ -40,12 +40,6 @@ def checkresAux(vis='', residual=''):
     RESIM = residual
     VIS = vis
 
-# FOR TESTING:
-#  RESIM = '/home/marti/NO_BACKUP/MERLIN/toto.psf'
-#  VIS = '/home/marti/NO_BACKUP/MERLIN/MERLIN.ms'
-#  RESIM = '/media/marti/LaCie_1/WORKAREA/ALMA_REDUCED/M100_B3/M100_Band3_CalibratedData/M100line.residual'
-#  VIS = '/media/marti/LaCie_1/WORKAREA/ALMA_REDUCED/M100_B3/M100_Band3_CalibratedData/M100all_lores.ms.contsub'
-
     Const = {'rad': 180./np.pi*3600., 'deg': 3600.}
 
     print VIS

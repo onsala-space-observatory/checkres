@@ -1,19 +1,10 @@
 import sys
 import os
 
-# import casatools
-# from casatasks import simobserve
-# from casatasks import clearcal
-# from casatasks import tclean
-
 vis = "Disc/Disc.alma.out10.noisy.ms"
 residual = "TEST1.CLEAN.residual"
 
 if not os.path.isdir(residual):
-    # cl = casatools.componentlist()
-    # ia = casatools.image()
-    # qa = casatools.quanta()
-
     # start by simulating an image of a disc
     # Array to use:
     arrayconfig = 'alma.out10.cfg'

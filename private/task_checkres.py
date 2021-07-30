@@ -23,11 +23,11 @@ import matplotlib.pyplot as pl
 import numpy as np
 import os
 from matplotlib.widgets import Slider
-from taskinit import gentools
-ms = gentools(['ms'])[0]
-tb = gentools(['tb'])[0]
-ia = gentools(['ia'])[0]
+import casatools
 
+ia = casatools.image()
+ms = casatools.ms()
+tb = casatools.table()
 
 def checkres(vis='', residual=''):
     auxout = checkresAux(vis, residual)
